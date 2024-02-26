@@ -11,35 +11,50 @@
            header {
 margin: auto;
 max-width: 1024px;
+display: flex;
+justify-content: space-between;
+align-items: center;
            }
            img {
-            width: 5%;
+            width: 10%;
             height: auto;
            }
+
            nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
            }
            nav ul li{
             display: inline-block;
-            margin-right: 2rem;
+            margin-right: 1rem;
+            gap: 1rem;
            }
            li a {
             text-decoration: none;
             color: black;
             font-weight: 700;
+           padding: 10px;
+           white-space: nowrap;
+           border-radius: 5px;
            }
-          
+          /*.list-style:hover{
+            background-image: linear-gradient(to right, aqua, rgb(251, 0, 255));
+          }*/
+          li a:hover{
+            background-color: blueviolet;
+          }
         </style>
 </head>
 <body>
 
 	<header>
+        <div>
         <a href=""><img src="https://w7.pngwing.com/pngs/771/194/png-transparent-golden-crown-logo-thumbnail.png" alt="Crown"></a>
-    
+    </div>
 
 		<nav>
-			<ul>
+			<ul class="list-style">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Service</a></li>
 				<li><a href="#">About us</a></li>
